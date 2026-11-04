@@ -1,6 +1,8 @@
 # MP #3: APIed Piper
 ### Due: Tuesday, Nov 3, 2026, 11:59PM CT
 
+Implementation and deployment instructions: [SETUP.md](./SETUP.md). Run `npm test` for the isolated integration tests.
+
 ## Table of Contents
 1. [Assignment](#1-assignment)
 2. [Getting Started](#2-getting-started)
@@ -163,7 +165,7 @@ A task is *pending* if it is not completed. Every pending task that is assigned 
 `cp .env.example .env`
 5. Install dependencies:
 `npm install`
-6. Uncomment the `mongoose.connect(...)` line in `server.js`, then start the dev server:
+6. Start the server (it connects to MongoDB automatically):
 `npm start`
 7. Deploy your API (see Tips) and check it with the autograder, see [Grading](#grading) and [Self-check with `submit.js`](#self-check-with-submitjs).
 
