@@ -1,0 +1,4 @@
+date,tool,scope,assistance,files
+2026-11-03,OpenAI Codex,Frontend,"Generated and simplified the responsive HTML/CSS landing page, including Tasks and Users links, SVG icons, and a JavaScript API connection indicator. Added browser HTML responses while preserving JSON responses for API clients. Visually checked the page and deployed it to Render.",web/index.html; routes/index.js; server.js
+,ChatGPT,Shared conversation,User-provided chatlog link; contents not reviewed.,https://chatgpt.com/share/6aeabf9c-3b00-83ea-929b-deac13e2e46d
+2026-11-03,OpenAI Codex,Database setup,"Inspected MongoDB Atlas, saved the approved network access rule, configured the ignored .env to target the mp3 database using user-supplied credentials, verified the connection, and initialized model indexes. Credentials are excluded.",.env (ignored); MongoDB Atlas; models/user.js; models/task.js
