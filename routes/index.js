@@ -51,7 +51,13 @@ async function saveTask(body, id, session) {
 }
 module.exports = function (app) {
     const router = express.Router();
-    router.get('/', (req, res) => ok(res, { service: 'Llama.io task API' }));
+    router.get('/', (req, res) => {
+        res.vary('Accept');
+        if (req.query.format !== 'json' && (req.get('Accept') || '').includes('text/html')) {
+            return res.sendFile(require('node:path').join(__dirname, '../web/index.html'));
+        }
+        ok(res, { service: 'Llama.io task API' });
+    });
     for (const [path, Model, save, defaultLimit] of [['users', User, saveUser, 0], ['tasks', Task, saveTask, 100]]) {
         router.get(`/${path}`, async (req, res) => {
             const q = collectionQuery(req.query, defaultLimit);

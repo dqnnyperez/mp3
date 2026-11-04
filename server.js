@@ -10,6 +10,7 @@ app.use((req, res, next) => {
 });
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.get('/', (req, res) => res.sendFile(require('node:path').join(__dirname, 'web/index.html')));
 require('./routes')(app);
 app.use((req, res) => res.status(404).json({ message: 'Endpoint not found.', data: null }));
 app.use((err, req, res, next) => {
