@@ -27,4 +27,4 @@ Codex generated the API implementation, validation, transaction-based user/task 
 
 ## Browser landing page
 
-The root URL and browser visits to `/api` show the Llama.io landing page. API clients continue receiving JSON from `/api`; use `/api?format=json` to explicitly view its JSON in a browser. `/api/users` and `/api/tasks` always return JSON. The landing page uses system fonts and original CSS/SVG illustrations, with no external image or font services. Codex also generated this visual page.
+The root URL and browser visits to `/api` show the Llama.io landing page. API clients continue receiving JSON from `/api`; use `/api?format=json` to explicitly view its JSON in a browser. `/api/users` and `/api/tasks` always return JSON. The landing page uses system fonts and original SVG icons, with no external image or font services. Codex also generated this visual page.
