@@ -1,5 +1,13 @@
 # Run and submit MP3
 
+Repository: https://github.com/dqnnyperez/mp3
+
+Deployed API: https://mp3-j82m.onrender.com/api
+
+Render service: https://dashboard.render.com/web/srv-dbl9rou417fc73ftnd1g
+
+Verified November 3, 2026: Render deployment is live; the course autograder returned **100/100 (20/20 points)**, with all 19 checks passing. This self-check does not submit the assignment.
+
 1. Use Node 24 (`nvm install 24 && nvm use 24`), then `npm ci`.
 2. Fill in `MONGODB_URI` in your local `.env` with your Atlas database connection string. The server uses multi-document transactions, so use Atlas or a MongoDB replica set. Keep `.env` out of Git.
 3. In Atlas, allow access from anywhere as required by the assignment. Use a database user with read/write access to the database in your URI.
